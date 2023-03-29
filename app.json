@@ -1,10 +1,31 @@
 {
   "expo": {
     "scheme": "acme",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "web": {
       "bundler": "metro"
     },
     "name": "expo-starter-boilerplate",
-    "slug": "expo-starter-boilerplate"
+    "slug": "expo-starter-boilerplate",
+    "extra": {
+      "eas": {
+        "projectId": "0614d47e-0bfc-4a5d-a6fd-c01e1003843b"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.mdchad.expostarterboilerplate"
+    }
   }
 }
