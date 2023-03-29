@@ -22,18 +22,18 @@ export default function Page() {
   return (
     <View className="flex-1 flex items-center">
       <View style={styles.main} className="space-y-5">
-                <Text style={styles.title}>Hello World</Text>
-                <Text style={styles.subtitle}>This is the first page of your app.</Text>
+        <Text style={styles.title}>Hello World</Text>
+        <Text style={styles.subtitle}>This is the first page of your app.</Text>
 
-                <Link href="/(app)/(tabs)/page1">
-                  <Text>View Tabs</Text>
-                </Link>
+        <Link href="/(app)/(tabs)/page1">
+          <Text>View Tabs</Text>
+        </Link>
 
-                <Link href="/(app)/(stack)/page1">
-                  <Text>View Stack</Text>
-                </Link>
+        <Link href="/(app)/(stack)/page1">
+          <Text>View Stack</Text>
+        </Link>
 
-                <Text>Get name from env : {TEST_NAME}</Text>
+        <Text>Get name from env : {TEST_NAME}</Text>
 
         <View className="flex items-center bg-red-500 p-5 rounded-xl">
           <Pressable onPress={triggerUpdate}>

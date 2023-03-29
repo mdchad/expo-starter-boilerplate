@@ -6,7 +6,7 @@
     "web": "expo start --web",
     "build:ios": "eas build -p ios",
     "build:android": "eas build -p android",
-    "pre-commit": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "pre-commit": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\" && git add .",
     "postinstall": "husky install",
     "prepare": "husky install"
   },
