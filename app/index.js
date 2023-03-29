@@ -1,7 +1,7 @@
-import { Pressable, StyleSheet, Text, View } from "react-native";
-import { Link } from 'expo-router'
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
-import { TEST_NAME } from "@env"
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Link } from 'expo-router';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import { TEST_NAME } from '@env';
 import * as Updates from 'expo-updates';
 
 export default function Page() {
@@ -10,14 +10,14 @@ export default function Page() {
       const update = await Updates.checkForUpdateAsync();
       if (update.isAvailable) {
         await Updates.fetchUpdateAsync();
-        alert('An update is available. Restart your app to apply the update.')
+        alert('An update is available. Restart your app to apply the update.');
         // Updates.reloadAsync();
       }
     } catch (e) {
       // handle or log error
-      console.log(e.message)
+      console.log(e.message);
     }
-  }
+  };
 
   return (
     <View className="flex-1 flex items-center">
@@ -55,16 +55,16 @@ const styles = StyleSheet.create({
   },
   main: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
     maxWidth: 960,
-    marginHorizontal: "auto",
+    marginHorizontal: 'auto',
   },
   title: {
     fontSize: 64,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   subtitle: {
     fontSize: RFPercentage(3),
-    color: "#38434D",
+    color: '#38434D',
   },
 });

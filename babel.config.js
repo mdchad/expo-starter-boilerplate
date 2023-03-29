@@ -3,26 +3,26 @@ module.exports = function (api) {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
-      ["nativewind/babel"],
-      ["module:react-native-dotenv", {
-        "moduleName": "@env",
-        "path": ".env",
-        "blacklist": null,
-        "whitelist": null,
-        "safe": false,
-        "allowUndefined": true
+      ['nativewind/babel'],
+      ['module:react-native-dotenv', {
+        'moduleName': '@env',
+        'path': '.env',
+        'blacklist': null,
+        'whitelist': null,
+        'safe': false,
+        'allowUndefined': true
       }],
-      "@babel/plugin-proposal-export-namespace-from",
-      require.resolve("expo-router/babel"),
-      ["module-resolver",
+      '@babel/plugin-proposal-export-namespace-from',
+      require.resolve('expo-router/babel'),
+      ['module-resolver',
         {
           alias: {
-            "@components": "./app/components",
-            "@pages": "./app/pages",
-            "@assets": "./assets",
-            "@lib": "./lib",
-            "@context": "./context",
-            "@data": "./data",
+            '@components': './app/components',
+            '@pages': './app/pages',
+            '@assets': './assets',
+            '@lib': './lib',
+            '@context': './context',
+            '@data': './data',
           },
         }]
     ],
