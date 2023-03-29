@@ -23,7 +23,7 @@ export default function Page() {
     <View className="flex-1 flex items-center">
       <View style={styles.main} className="space-y-5">
         <Text style={styles.title}>Hello World</Text>
-                <Text style={styles.subtitle}>This is the first page of your app.</Text>
+               <Text style={styles.subtitle}>This is the first page of your app.</Text>
 
         <Link href='/(app)/(tabs)/page1'>
           <Text>View Tabs</Text>

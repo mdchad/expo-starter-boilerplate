@@ -7,7 +7,8 @@
     "build:ios": "eas build -p ios",
     "build:android": "eas build -p android",
     "prettier": "prettier './app/**/*.{js,jsx,ts,tsx}'",
-    "pre-commit": "eslint --fix ."
+    "pre-commit": "eslint --fix .",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.18.1",
