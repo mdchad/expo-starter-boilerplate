@@ -1,8 +1,8 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { Link } from 'expo-router';
-import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import { TEST_NAME } from '@env';
+import { Link } from 'expo-router';
 import * as Updates from 'expo-updates';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 export default function Page() {
   const triggerUpdate = async () => {
@@ -23,13 +23,13 @@ export default function Page() {
     <View className="flex-1 flex items-center">
       <View style={styles.main} className="space-y-5">
         <Text style={styles.title}>Hello World</Text>
-               <Text style={styles.subtitle}>This is the first page of your app.</Text>
+             <Text style={styles.subtitle}>This is the first page of your app.</Text>
 
-        <Link href='/(app)/(tabs)/page1'>
+        <Link href="/(app)/(tabs)/page1">
           <Text>View Tabs</Text>
         </Link>
 
-        <Link href='/(app)/(stack)/page1'>
+        <Link href="/(app)/(stack)/page1">
           <Text>View Stack</Text>
         </Link>
 
@@ -37,9 +37,7 @@ export default function Page() {
 
         <View className="flex items-center bg-red-500 p-5 rounded-xl">
           <Pressable onPress={triggerUpdate}>
-            <Text className="text-white">
-              Update
-            </Text>
+            <Text className="text-white">Update</Text>
           </Pressable>
         </View>
       </View>
@@ -57,14 +55,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     maxWidth: 960,
-    marginHorizontal: 'auto',
+    marginHorizontal: 'auto'
   },
   title: {
     fontSize: 64,
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
   subtitle: {
     fontSize: RFPercentage(3),
-    color: '#38434D',
-  },
+    color: '#38434D'
+  }
 });

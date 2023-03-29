@@ -1,17 +1,17 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { Link } from 'expo-router'
+import { Link } from 'expo-router';
+import React from 'react';
+import { View, Text } from 'react-native';
 
 const page1 = () => {
-    return (
-        <View className="flex-1 items-center justify-center">
-            <Text>page1</Text>
+  return (
+    <View className="flex-1 items-center justify-center">
+      <Text>page1</Text>
 
-            <Link href="/">
-                <Text>Go to main</Text>
-            </Link>
-        </View>
-    )
-}
+      <Link href="/">
+        <Text>Go to main</Text>
+      </Link>
+    </View>
+  );
+};
 
-export default page1
+export default page1;

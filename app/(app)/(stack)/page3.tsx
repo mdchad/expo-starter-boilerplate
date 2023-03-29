@@ -1,6 +1,6 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { Link } from 'expo-router'
+import { Link } from 'expo-router';
+import React from 'react';
+import { View, Text } from 'react-native';
 
 const page3 = () => {
   return (
@@ -11,7 +11,7 @@ const page3 = () => {
         <Text>Go to page1</Text>
       </Link>
     </View>
-  )
-}
+  );
+};
 
-export default page3
+export default page3;

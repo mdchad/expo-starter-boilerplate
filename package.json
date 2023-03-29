@@ -6,9 +6,9 @@
     "web": "expo start --web",
     "build:ios": "eas build -p ios",
     "build:android": "eas build -p android",
-    "prettier": "prettier './app/**/*.{js,jsx,ts,tsx}'",
-    "pre-commit": "eslint --fix .",
-    "postinstall": "husky install"
+    "pre-commit": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "postinstall": "husky install",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.18.1",
@@ -36,12 +36,7 @@
   "devDependencies": {
     "@babel/core": "^7.19.3",
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
-    "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.57.0",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",
-    "eslint": "^8.37.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
     "prettier": "^2.8.7",
@@ -64,7 +59,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo 'Running pre-commit hook' && eslint ."
+      "pre-commit": "npm run pre-commit"
     }
   },
   "name": "expo-starter-boilerplate",
