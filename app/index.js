@@ -58,6 +58,10 @@ export default function Page() {
         </Link>
 
         <CountDisplay />
+
+        <Link href="/nativebase">
+          <Text>View nativebase</Text>
+        </Link>
       </View>
     </View>
   );
