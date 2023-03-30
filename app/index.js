@@ -3,8 +3,8 @@ import { Link } from 'expo-router';
 import * as Updates from 'expo-updates';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
-import Notification from '@components/notification';
 import { StatusBar } from 'expo-status-bar';
+import CountDisplay from './components/countDisplay';
 
 export default function Page() {
   const triggerUpdate = async () => {
@@ -45,7 +45,19 @@ export default function Page() {
           </Pressable>
         </View>
 
-        <Notification />
+        <Link href="/notification">
+          <Text>View Notification</Text>
+        </Link>
+
+        <Link href="/flashlist">
+          <Text>View flashlist</Text>
+        </Link>
+
+        <Link href="/async">
+          <Text>View async</Text>
+        </Link>
+
+        <CountDisplay />
       </View>
     </View>
   );

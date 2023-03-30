@@ -9,6 +9,8 @@ This is a starter boilerplate for building mobile apps using [Expo](https://expo
 - [expo-notifications](https://docs.expo.io/versions/latest/sdk/notifications/) for push notifications
 - [Prettier pre-commit](https://prettier.io/docs/en/precommit.html) re-format your files that are marked as “staged” via `git add` before you commit.
 - [NativeWind](https://www.nativewind.dev/) uses Tailwind CSS as scripting language to create a universal style system for React Native
+- [Flashlist](https://github.com/Shopify/flash-list) a better list for React Native (by Shopify).
+- [Async Storage](https://react-native-async-storage.github.io/async-storage/docs/usage/) Data storage system for React Native.
 
 # Getting Started
 
