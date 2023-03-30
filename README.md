@@ -2,7 +2,7 @@
 
 This is a starter boilerplate for building mobile apps using [Expo](https://expo.io/) and [React Native](https://reactnative.dev/). It includes the following features:
 
-- Usage of environment variables through [expo-env](https://docs.expo.io/guides/environment-variables/)
+- Usage of environment variables through [expo-env](https://www.npmjs.com/package/react-native-dotenv)
 - [expo-router](https://expo.github.io/router/docs) for navigation
 - [expo-updates](https://docs.expo.dev/versions/latest/sdk/updates/) for over-the-air updates
 - [react-native-responsive-fontsize](https://github.com/heyman333/react-native-responsive-fontSize) for responsive font sizes
