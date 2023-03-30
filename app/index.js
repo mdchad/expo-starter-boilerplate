@@ -3,6 +3,8 @@ import { Link } from 'expo-router';
 import * as Updates from 'expo-updates';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import Notification from '@components/notification';
+import { StatusBar } from 'expo-status-bar';
 
 export default function Page() {
   const triggerUpdate = async () => {
@@ -20,8 +22,10 @@ export default function Page() {
   };
 
   return (
-    <View className="flex-1 flex items-center">
-      <View style={styles.main} className="space-y-5">
+    <View className="flex-1">
+      <StatusBar style="dark" />
+
+      <View className="flex flex-1 items-center justify-center space-y-5">
         <Text style={styles.title}>Hello World</Text>
         <Text style={styles.subtitle}>This is the first page of your app.</Text>
 
@@ -40,6 +44,8 @@ export default function Page() {
             <Text className="text-white">Update</Text>
           </Pressable>
         </View>
+
+        <Notification />
       </View>
     </View>
   );
@@ -50,12 +56,6 @@ const styles = StyleSheet.create({
     // flex: 1,
     // alignItems: "center",
     // padding: 24,
-  },
-  main: {
-    flex: 1,
-    justifyContent: 'center',
-    maxWidth: 960,
-    marginHorizontal: 'auto'
   },
   title: {
     fontSize: 64,
