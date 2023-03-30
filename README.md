@@ -167,7 +167,7 @@ expo-starter-boilerplate/
 
 ```
 
-Please refer to the documentation for instructions on how to implement `expo-router` with folder structure navigation.
+Please refer to the [documentation](https://expo.github.io/router/docs) for instructions on how to implement `expo-router` with folder structure navigation.
 
 # Contributing
 
