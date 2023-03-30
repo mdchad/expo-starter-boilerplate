@@ -71,7 +71,7 @@ async function registerForPushNotificationsAsync() {
 export default function Notification() {
   const [expoPushToken, setExpoPushToken] = useState('');
   const [notification, setNotification] = useState(false);
-  const notificationListener = useRef();
+  const notificationListener = useRef(null);
   const responseListener = useRef();
 
   useEffect(() => {
