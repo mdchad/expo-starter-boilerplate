@@ -11,6 +11,7 @@ This is a starter boilerplate for building mobile apps using [Expo](https://expo
 - [NativeWind](https://www.nativewind.dev/) uses Tailwind CSS as scripting language to create a universal style system for React Native
 - [Flashlist](https://github.com/Shopify/flash-list) a better list for React Native (by Shopify).
 - [Async Storage](https://react-native-async-storage.github.io/async-storage/docs/usage/) Data storage system for React Native.
+- [NativeBase](https://docs.nativebase.io/getting-started) a UI lib for react native apps for iOS, Android, Web.
 
 # Getting Started
 
