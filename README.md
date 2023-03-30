@@ -126,7 +126,7 @@ expo-starter-boilerplate/
 ├── app/
 │   ├── (app)/
 │   ├── components/
-│   ├── _layout.js
+│   ├── _layout.js (define stack)
 │   └── index.js
 
 ```
@@ -149,7 +149,7 @@ expo-starter-boilerplate/
 
 ```
 
-Example for screen:
+Example for stack:
 
 ```
 expo-starter-boilerplate/
